@@ -253,6 +253,22 @@ st.markdown("""
         border-bottom: 3px solid #2563eb;
     }
     
+    /* FIX: Force Input Visibility */
+    div[data-baseweb="input"] > div, div[data-baseweb="base-input"] {
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+        border: 1px solid #e2e8f0 !important;
+    }
+    
+    div[data-baseweb="select"] > div {
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+    }
+    
+    .stSelectbox div[data-baseweb="select"] span {
+        color: #0f172a !important;
+    }
+    
 </style>
 """, unsafe_allow_html=True)
 
@@ -299,7 +315,7 @@ st.markdown("""
 # =============================================
 with st.sidebar:
     # Display custom logo
-    logo_path = "/Users/ayyapparaja/.gemini/antigravity/brain/aa8bf5e5-f64d-46ff-b892-6c71e5f164c0/heart_disease_logo.png"
+    logo_path = "heart_disease_logo.png"
     try:
         st.image(logo_path, width=120)
     except:
