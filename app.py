@@ -186,42 +186,7 @@ st.markdown("""
         font-size: 0.9rem;
     }
     
-    /* Hide slider value (thumb label) by default */
-    div[data-baseweb="slider"] [role="slider"] {
-        position: relative;
-    }
-    
-    /* Hide the value that appears above slider */
-    div[class*="stSlider"] [data-baseweb="slider"] [data-testid="stThumbValue"] {
-        opacity: 0 !important;
-        transition: opacity 0.3s ease;
-    }
-    
-    /* Show value on hover */
-    div[class*="stSlider"]:hover [data-testid="stThumbValue"] {
-        opacity: 1 !important;
-    }
-    
-    /* Hide slider tick labels (min/max values like 15.0, 50.0, 40, 120) */
-    div[class*="stSlider"] [data-testid="stTickBar"] {
-        opacity: 0 !important;
-        transition: opacity 0.3s ease;
-    }
-    
-    /* Show tick labels on hover */
-    div[class*="stSlider"]:hover [data-testid="stTickBar"] {
-        opacity: 1 !important;
-    }
-    
-    /* Alternative selector for slider tick labels */
-    div[class*="stSlider"] div[data-baseweb="slider"] > div > div > div {
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-    
-    div[class*="stSlider"]:hover div[data-baseweb="slider"] > div > div > div {
-        opacity: 1;
-    }
+
     
     /* Footer */
     .footer {
